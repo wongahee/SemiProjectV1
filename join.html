@@ -4,6 +4,21 @@
         <meta charset = "UTF-8">
         <title>세미프로젝트V1-join</title>
         <link rel = "stylesheet" href="/css/base.css">
+
+        <style>
+            #joinfrm { /*border: 1px solid red;*/ width: 300px;
+                       margin: 100px auto; } /*form 가운데정렬*/
+            #joinfrm div { margin-bottom: 10px; }
+            #joinfrm label { display: inline-block; width: 120px;
+                             text-align: right; font-weight: bold; }
+            /*후손선택자는 빈칸으로 바로 나열
+              자손선택자는 < 표시 (바로 밑요소=자손)*/
+            input, button { padding: 5px; }
+            input { width: 150px; }
+
+
+        </style>
+
     </head>
     <body>
         <div id = "wrap">
@@ -50,6 +65,7 @@
            </div>
 
            <div>
+               <label></label>
                 <button type = "button">입력완료</button>
                 <button type = "reset">다시입력</button>
            </div>
