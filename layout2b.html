@@ -4,77 +4,13 @@
     <head>
         <meta charset = "UTF-8">
         <title>shopping</title>
-        <style>
-            body { margin: 0; padding: 0 }
-            ul { list-style: none; padding: 0 } /*list스타일*/
-
-            #wrap { width: 1150px; margin: 0 auto; border: 3px solid black; }
-            /*가로, 가운데정렬*/
-            header, main, footer, nav { /*border: 1px solid red;*/ }
-
-            /*header 스타일*/
-            header { height: 100px; }
-            header h1 { background: #dcdcdc; padding: 20px 50px; float: left;
-                        margin: 10px 10px 10px 25px; width: 70px; }
-            /*배경색,h1크기,h1옆요소배치,띄우기,가로길이*/
-            header p { float: left; margin-top: 65px }
-            /*p옆요소배치,윗부분띄우기*/
-            header ul { float: right; margin-right: 30px }
-            /*우측정렬,오른쪽부분 띄우기*/
-            header li { float: left; padding: 5px }
-            /*한줄정렬,간격띄우기*/
-
-            /*nav 스타일*/
-            nav { height: 35px; clear: both; padding-left: 20px;
-                  padding-top: 5px ; background: #dcdcdc; }
-            /*띄우기초기화, 왼쪽띄우기,윗부분띄우기*/
-            nav input { border: 2px solid black; padding: 5px; width: 325px }
-            nav select { padding: 5px; width: 150px; text-decoration: underline;
-                         font-size: 14px; }
-            nav button { padding: 5px; width: 125px; background: black;
-                          color: white; font-size: 14px; }
-
-            /*main-aside 스타일*/
-            aside { /*border: 1px solid red;*/ width: 305px; float: left; }
-            /*왼쪽으로 띄우기*/
-            aside ul { margin: 10px 10px 20px 20px; border: 4px solid black;  }
-            aside li { border-bottom: 1px solid black; padding: 7px 14px;
-                       font-weight: bold; font-size: 18px; }
-            /*밑줄,표안간격*/
-            aside li:last-child { border: none; }
-            /*표 마지막줄 안보이기*/
-
-            /*main-banner 스타일*/
-            #banner { border: 4px solid black; width: 800px; float: right;
-                      height: 275px; margin: 10px 25px 20px 0 }
-            /*오른쪽으로 띄우기*/
-            #banner h3 { text-align: center; margin-top: 120px}
-            #banner ul { margin-top: 65px; margin-left: 600px; }
-            #banner li { float: left; padding: 8px 12px; background: #dcdcdc;
-                         margin-right: 10px; font-weight: bold; font-size: 18px }
-                        /*왼쪽으로 띄우기*/
-
-            /*main-prodlist 스타일*/
-            section:nth-child(2) { clear: both; } /*밑으로내리기*/
-
-            #prodlist h2 { margin-left: 25px; }
-            #prodlist ul { height: 150px; margin: 50px 0 75px 65px; }
-            #prodlist li { float: left; margin-right: 55px }
-            #prodlist div { width: 120px; height: 120px; background: #dcdcdc;
-                            border-radius: 10px; }
-            #prodlist p { text-align: center; }
-
-            /*footer 스타일*/
-            footer { clear: both; border-top: 3px solid black; height: 220px }
-            footer ul { float: left; margin-right: 80px; }
-            /*수평만들기, 오른쪽띄우기*/
-            footer ul:first-child { margin-left: 75px; } /*왼쪽띄우기*/
-
-        </style>
-
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/myreset.css">
+        <link rel="stylesheet" href="/css/layout2.css">
     </head>
     <body>
-         <div id = "wrap">
+         <div id="wrap">
              <header>
                  <h1>LOGO</h1>
                  <p><u>Log in</u> or <u>Create Account</u></p>
@@ -170,6 +106,20 @@
              </footer>
 
         </div>
-
     </body>
 </html>
+
+<!--
+
+reset css
+: 브라우저마다 기본적으로 제공하는 요소에 따라
+스타일의 기본값이 존재하는데, 운영체제에 따라 차이가 있을 수 있음
+이러한 브라우저 간의 차이를 최소화하기위해
+스타일을 0인 상태로 만드는 코드를 reset css라 함
+
+유명 웹 디자이너 에릭마이어의 css reset과
+오픈소스 형태로 배포되는 normalize 등이 유명함
+
+https://meyerweb.com/eric
+http://necolas.github.io/normalize.css/
+-->
