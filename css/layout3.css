@@ -1,0 +1,93 @@
+/*레이아웃*/
+#wrap { width: 1150px; margin: 0 auto; /*border: 1px solid red;*/ }
+header, footer { height: 125px; /*border: 1px solid blue;*/ }
+header nav { height: 35px; /*border: 1px solid green;*/ }
+#main { min-height: 800px; margin: 40px 0; }
+aside { width: 225px; /*border: 1px solid orange;*/ }
+#content { width: 915px; /*border: 1px solid navy;*/ }
+
+/*header*/
+header { background: yellowgreen; }
+header h1 { width: 225px; height: 125px; margin: 0;
+            background: purple; color: white; float: left; }
+.qmenu { float: right; margin-top: 10px; }
+.qmenu li { float: left; margin-right: 10px; }
+
+.search { float: left; margin: 45px 0 0 150px; }
+.search input { border: 5px solid green; height: 30px; width: 445px;}
+.search button { width: 100px; height: 42px; background: green;
+                 color: white; font-weight: bold; font-size: 18px;
+                 border: 4px outset green; }
+
+header nav { clear: both; background: black; color: white; }
+header nav li { float: left; padding-left: 70px; margin-top: 5px;
+                font-weight: bold; font-size: 18px }
+
+/*main*/
+#main {  }
+aside { float: left; background: yellow; }
+
+.lgmenu { margin-top: 20px; }
+.lgmenu li { float: left; font-size: 12px; padding: 10px 7px; }
+
+aside hr { clear: both; }
+.atlogin li { float: left; padding: 8px 7px; }
+
+.loginftm { margin-bottom: 180px }
+.loginftm li { float: left;  }
+.loginftm input { width: 125px; margin: 3px 8px; padding: 5px; }
+.loginftm button { width: 65px; height: 70px; position: relative;
+                   top: -35px; }
+
+#notice { clear: both; background: lightyellow; }
+#notice h3 { background: black; color: white; padding: 7px 5px; }
+#notice li { height: 40px; background: url(img/choice.png) no-repeat              top left; padding-left: 20px; margin-left: 5px; }
+.ad { width: 210px; height: 300px; margin: 50px auto;
+      border: 1px dashed black; background: white; }
+
+#content { float: right; background: orange; }
+
+/*웰컴메세지(hello,world)*/
+#welcome { background: #ccffcc; height: 450px;
+           margin: -30px 10px 10px 10px}
+#welcome h1 { font-size: 55px; padding: 10px; font-family: Garamond;               }
+#welcome p { width: 650px; padding-left: 15px; line-height: 1.55;
+             font-size: 18px;}
+
+/*게시판-최신정보,사용기*/
+#board { width: 895px; height: 415px; margin: 10px 10px 10px 10px;
+         /*border: 1px solid black;*/ }
+#newinfo { width: 440px; height: 415px; background: ghostwhite; float: left }
+#newinfo h3 { background: #666699; color: white; padding: 7px 1px;
+              margin: 0; }
+#newinfo li { height: 35px; padding-left: 40px; margin-left: 10px;
+              background: url(img/bear.png) no-repeat 5px 5px; }
+#newinfo li:first-child { padding: 0; margin: 0;}
+#newinfo li:nth-child(2) { margin-top: 20px;}
+
+#used { width: 440px; height: 415px; background: ghostwhite; float: right }
+#used h3 { background: #99cc33; color: white; padding: 7px 1px;
+              margin: 0; }
+#used li { height: 35px; padding-left: 40px; margin-left: 10px;
+              background: url(img/fries.png) no-repeat 5px 5px; }
+#used li:first-child { padding: 0; margin: 0;}
+#used li:nth-child(2) { margin-top: 20px;}
+
+/*갤러리*/
+#gallery { clear: both; width: 895px; height: 450px; background: beige; margin: 20px 10px 20px 10px }
+#gallery h3 { background: purple; color: white; padding: 7px 1px;
+              margin: 0; }
+#gallery ul { margin-top: 25px; }
+#gallery li { float: left; padding-left: 30px }
+#gallery div { width: 140px; height: 140px;
+border: 1px dashed black; background: white; }
+#gallery p { text-align: center; }
+
+/*footer*/
+footer { clear: both; background: green; height: 160px; }
+footer .nav { background: navy; color: white; height: 35px; }
+footer .nav li { float: left; padding-left: 75px; font-weight: bold;
+                 font-size: 18px; margin-top: 5px; }
+footer div { float: left; width: 225px; height: 125px; background: purple; }
+footer p { float: right; text-align: right; font-weight: bold;
+           margin: 75px 10px 0 0; font-size: 18px}
